@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--background);
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+  }
+
+  :root {
+      --background:#00203fff;
+      --container: #adefd1ff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--background);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+  }
+
+  header {
+      display: flex;
+  }
+
+  .movie1{
+    background: url('./asset/jumong-1-1.webp') no-repeat center top;
+    text-decoration: none;
+    background-size: contain;
+    min-height: 400px;
+    min-width: 250px;
+    border-radius:10px;
+  }
+
+  .container {
+    background-color:var(--container);
+    border-radius:10px;
+  }
+
+  .container p{
+      text-align: center;
+      color: var(--container);
+      font-size: 25px;
+
+  }
+
+  .movie-list {
+      display: grid;
+      grid-template: (auto, auto , auto auto);
+      grid-template-columns: auto auto auto auto;
+      justify-content: center;
+  }
+
+  .likes-btn {
+    width: 50px;
+    display: block;
+    justify-content: flex-end;
+    margin: auto;
+    padding: 2px 2px;
+    gap: 1px;
+    outline: none;
+    background: var(--background);
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    color: var(--container);
+    cursor: pointer;
+  }
+

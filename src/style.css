@@ -51,9 +51,9 @@
 
   .movie-list {
       display: grid;
-      grid-template: (auto, auto , auto auto);
       grid-template-columns: auto auto auto auto;
       justify-content: center;
+      column-gap: 30px;
   }
 
   .likes-btn {

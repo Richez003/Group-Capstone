@@ -1,136 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato&family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato&family=Limelight&family=Ubuntu:wght@500&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: var(--background);
-    font-family: 'Bebas Neue', cursive;
-    text-decoration: none;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--background);
+  font-family: 'Bebas Neue', cursive;
+  text-decoration: none;
+}
 
-  :root {
-      --background:#00203fff;
-      --container: #adefd1ff;
-  }
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: var(--background);
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: var(--secondary);
-  }
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
 
-  header {
-      display: flex;
-  }
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+}
 
-  .movie1{
-    background: url('./asset/jumong-1-1.webp') no-repeat center top;
-    text-decoration: none;
-    background-size: contain;
-    min-height: 400px;
-    min-width: 270px;
-    border-radius:10px;
-  }
+:root {
+  --background: #00203fff;
+  --container: #adefd1ff;
+}
 
-  .movie2{
-    background: url('./asset/movie.webp') no-repeat center top;
-    text-decoration: none;
-    background-size: contain;
-    min-height: 400px;
-    min-width: 270px;
-    border-radius:10px;
-  }
+.topnav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+}
 
-  .movie3{
-    background: url('./asset/movie2.jpg') no-repeat center top;
-    text-decoration: none;
-    background-size: contain;
-    min-height: 400px;
-    min-width: 270px;
-    border-radius:10px;
-  }
+.movie-list {
+  padding: 50px 12px 12px 24px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  column-gap: 30px;
+}
 
-  .movie4{
-    background: url('./asset/movie1.jpg') no-repeat center top;
-    text-decoration: none;
-    background-size: contain;
-    min-height: 400px;
-    min-width: 270px;
-    border-radius:10px;
-  }
+.left-nav {
+  padding-top: 18px;
+  font-family: 'Limelight', cursive;
+  display: flex;
+  font-size: 25px;
+  position: relative;
+  margin-top: -30px;
+}
 
-   
-  .movie5{
-    background: url('./asset/images\ \(3\).jfif') no-repeat center top;
-    text-decoration: none;
-    background-size: contain;
-    min-height: 400px;
-    min-width: 270px;
-    border-radius:10px;
-  }
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 4rem;
+}
 
-   
-  .movie6{
-    background: url('./asset/unnamed.png') no-repeat center top;
-    text-decoration: none;
-    background-size: contain;
-    min-height: 400px;
-    min-width: 270px;
-    border-radius:10px;
-  }
+.right-nav input[type=text] {
+  font-size: 15px;
+  border-radius: 5px;
+  color: #fff;
+}
 
-  .movie7{
-    background: url('./asset/The_Originals_poster.webp') no-repeat center top;
-    text-decoration: none;
-    background-size: contain;
-    min-height: 400px;
-    min-width: 270px;
-    border-radius:10px;
-  }
+.big {
+  font-size: 40px;
+  color: red;
+}
 
-  .movie8{
-    background: url('./asset/download.jfif') no-repeat center top;
-    text-decoration: none;
-    background-size: contain;
-    min-height: 400px;
-    min-width: 270px;
-    border-radius:10px;
-  }
+.big-2 {
+  color: red;
+}
 
+.middle {
+  font-family: 'Limelight', cursive;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+}
 
-  .container {
-    background-color:var(--container);
-    border-radius:10px;
+.movie1{
+  background: url('./asset/jumong-1-1.webp') no-repeat center top;
+  text-decoration: none;
+  background-size: contain;
+  min-height: 400px;
+  min-width: 270px;
+  border-radius: 10px;
+}
+
+.movie2{
+  background: url('./asset/movie.webp') no-repeat center top;
+  text-decoration: none;
+  background-size: contain;
+  min-height: 400px;
+  min-width: 270px;
+  border-radius: 10px;
+}
+
+.movie3{
+  background: url('./asset/movie2.jpg') no-repeat center top;
+  text-decoration: none;
+  background-size: contain;
+  min-height: 400px;
+  min-width: 270px;
+  border-radius:10px;
+}
+
+.movie4 {
+  background: url('./asset/movie1.jpg') no-repeat center top;
+  text-decoration: none;
+  background-size: contain;
+  min-height: 400px;
+  min-width: 270px;
+  border-radius: 10px;
+}
+
+.movie5{
+  background: url('./asset/images\ \(3\).jfif') no-repeat center top;
+  text-decoration: none;
+  background-size: contain;
+  min-height: 400px;
+  min-width: 270px;
+  border-radius:10px;
+}
+
+.movie6{
+  background: url('./asset/unnamed.png') no-repeat center top;
+  text-decoration: none;
+  background-size: contain;
+  min-height: 400px;
+  min-width: 270px;
+  border-radius:10px;
+}
+
+.movie7{
+  background: url('./asset/The_Originals_poster.webp') no-repeat center top;
+  text-decoration: none;
+  background-size: contain;
+  min-height: 400px;
+  min-width: 270px;
+  border-radius:10px;
+}
+
+.movie8{
+  background: url('./asset/download.jfif') no-repeat center top;
+  text-decoration: none;
+  background-size: contain;
+  min-height: 400px;
+  min-width: 270px;
+  border-radius:10px;
+}
+
+.container {
+  background-color:var(--container);
+  border-radius:10px;
   border: 3px solid black;
-  }
+}
 
-  .container p {
-      text-align: center;
-      color: var(--container);
-      font-size: 25px;
-  }
+.container p {
+  text-align: center;
+  color: var(--container);
+  font-size: 25px;
+}
 
-  .movie-list {
-      display: grid;
-      grid-template-columns: auto auto auto auto;
-      justify-content: center;
-      column-gap: 50px;
-      row-gap: 50px;
-  }
+.movie-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  column-gap: 50px;
+  row-gap: 50px;
+}
 
-  .likes-btn {
-    width: 80px;
-    display: flex;
-    justify-content: flex-end;
-    margin: auto;
-    padding: 2px 2px;
-    gap: 1px;
-    outline: none;
+.likes-btn {
+  width: 80px;
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+  padding: 2px 2px;
+  gap: 1px;
+  outline: none;
     background: var(--background);
     font-size: 18px;
     border: none;
@@ -184,4 +231,17 @@ cursor: pointer;
 #reserve:hover {
   background: var(--background);
   color: var(--container);
+}
+
+footer {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  color: #ddd;
+  padding: 1rem 0;
+  display: flex;
+  height: 72px;
+  font-size: 20px;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
 }

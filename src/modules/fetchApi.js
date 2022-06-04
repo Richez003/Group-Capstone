@@ -1,10 +1,6 @@
 export default class fetchApi {
   static likeUrl =
-    'https://us-central1-involvement-
-
-api.cloudfunctions.net/capstoneApi/apps/NU0JRPbStVeyNgQWILEC/lik
-
-es/';
+    'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/NU0JRPbStVeyNgQWILEC/likes/';
 
   static setLikes = async (id) => {
     const response = await fetch(this.likeUrl, {

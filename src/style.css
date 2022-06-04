@@ -10,21 +10,8 @@
   text-decoration: none;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--background);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--secondary);
-}
-
-:root {
-  --background: #00203fff;
-  --container: #adefd1ff;
+body {
+  background-color: #00203fff;
 }
 
 .topnav {
@@ -33,21 +20,13 @@
   padding-top: 3rem;
 }
 
-.movie-list {
-  padding: 50px 12px 12px 24px;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  justify-content: center;
-  column-gap: 30px;
-}
-
 .left-nav {
   padding-top: 18px;
   font-family: 'Limelight', cursive;
   display: flex;
   font-size: 25px;
   position: relative;
-  margin-top: -30px;
+  margin-top: -40px;
 }
 
 ul {
@@ -59,7 +38,7 @@ ul {
 .right-nav input[type=text] {
   font-size: 15px;
   border-radius: 5px;
-  color: #fff;
+  color: rgb(34, 1, 1);
 }
 
 .big {
@@ -75,7 +54,6 @@ ul {
   font-family: 'Limelight', cursive;
   font-size: 20px;
   display: flex;
-  flex-direction: row;
 }
 
 header {
@@ -83,6 +61,7 @@ header {
   color: #ddd;
   padding: 1rem 0;
   width: 100%;
+  background-color: rgb(58, 233, 125);
 }
 
 .title {
@@ -101,10 +80,6 @@ header {
 
 main p {
   color: white;
-}
-
-ul {
-  list-style: none;
 }
 
 .text-center {
@@ -221,9 +196,11 @@ h5 {
 
 .user-name,
 .comment {
-  padding: 0.7rem;
+  padding-top: 1.7rem;
   width: 500px;
   border-radius: 10px;
+  color: #fff;
+  margin: 0 auto;
 }
 
 .movie-container {
@@ -232,8 +209,7 @@ h5 {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
-  padding: 0;
-  margin: 0;
+  padding-top: 3rem;
 }
 
 .each-movie {
@@ -273,9 +249,9 @@ h5 {
 .btn-send {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   row-gap: 1rem;
+  margin: 0 auto;
+  width: 80%;
 }
 
 footer {

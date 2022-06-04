@@ -1,3 +1,7 @@
 import './style.css';
+import Movies from './modules/displayUrl.js';
+import fetchApi from './modules/fetchApi';
 
-import getApi from './modules/getApi';
+Movies.displayMovies();
+fetchApi.getLikes();
+Movies.counterMovies();

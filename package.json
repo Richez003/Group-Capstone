@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "boxicons": "^2.1.2",
+    "cross-fetch": "^3.1.5",
     "lodash": "^4.17.21"
   }
 }

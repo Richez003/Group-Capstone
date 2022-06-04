@@ -1,5 +1,3 @@
-commentsCounter.test.js
-
 import commentsUrl from '../modules/commentsUrl.js';
 
 test('Display number of comments', () => {

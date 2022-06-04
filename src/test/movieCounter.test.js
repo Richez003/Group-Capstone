@@ -1,5 +1,3 @@
-movieCounter.test.js
-
 import Movies from '../modules/displayUrl.js';
 
 test('Display number of movies', async () => {
